@@ -65,11 +65,9 @@ export default function VerifyCertificate() {
                     className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
                   />
                 </div>
-                <Button className="w-full group">
+                <Button className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 w-full group">
                   Verify Certificate
-                  <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">
-                    →
-                  </span>
+                  <span className="ml-2 inline-block transform group-hover:translate-x-2 transition-transform duration-300">→</span>
                 </Button>
               </div>
             </div>

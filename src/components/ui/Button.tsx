@@ -1,10 +1,11 @@
 "use client";
-import { ButtonHTMLAttributes, ReactNode } from 'react';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+import React from 'react';
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export const Button = ({
@@ -14,7 +15,7 @@ export const Button = ({
   size = 'md',
   ...props
 }: ButtonProps) => {
-  const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg transition-colors duration-200';
+  const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-300';
   
   const sizeStyles = {
     sm: 'px-3 py-1.5 text-sm',
@@ -23,10 +24,10 @@ export const Button = ({
   };
 
   const variantStyles = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',
-    secondary: 'bg-gray-100 text-gray-900 hover:bg-gray-200 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2',
-    outline: 'border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',
-    ghost: 'text-gray-700 hover:bg-gray-100 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2'
+    primary: 'bg-gradient-to-r from-blue-500 to-[#00ABE4] text-white hover:from-blue-600 hover:to-[#0098cb] transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25',
+    secondary: 'bg-[#E9F1FA] text-blue-600 hover:bg-blue-50 hover:-translate-y-1 transform hover:scale-105 shadow-md hover:shadow-lg',
+    outline: 'border-2 border-blue-300 text-blue-600 hover:border-blue-400 hover:bg-[#E9F1FA] transform hover:scale-105 hover:-translate-y-1',
+    ghost: 'text-blue-600 hover:bg-[#E9F1FA] transform hover:scale-105 hover:-translate-y-0.5'
   };
 
   return (

@@ -21,11 +21,11 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold transition-transform duration-300 group-hover:scale-110">
-                CFC
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-[#00ABE4] to-[#00ABE4] flex items-center justify-center text-white font-bold">
+                CC
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
-                CERTI-FI-CHAIN
+              <span className="text-xl font-bold bg-gradient-to-r from-[#00ABE4] to-[#00ABE4] text-transparent bg-clip-text">
+                CERTIFY-CHAIN
               </span>
             </Link>
             <div className="hidden sm:ml-10 sm:flex sm:space-x-4">
@@ -37,10 +37,10 @@ const Navbar = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="group relative px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                  className="group relative px-3 py-2 text-gray-600 hover:text-[#00ABE4] transition-colors duration-200"
                 >
                   {link.label}
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 transition-transform duration-200 group-hover:scale-x-100" />
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00ABE4] transform scale-x-0 transition-transform duration-200 group-hover:scale-x-100" />
                 </Link>
               ))}
             </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <Button
               variant="outline"
-              className="group border-blue-200 hover:border-blue-400 transition-colors duration-200"
+              className="group border-[#00ABE4] text-[#00ABE4] hover:bg-[#E9F1FA] transition-colors duration-200"
             >
               <span className="mr-2">💳</span>
               Connect Wallet
@@ -96,7 +96,7 @@ const Navbar = () => {
             <Link
               key={link.href}
               href={link.href}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#00ABE4] hover:bg-[#E9F1FA] transition-colors duration-200"
             >
               {link.label}
             </Link>

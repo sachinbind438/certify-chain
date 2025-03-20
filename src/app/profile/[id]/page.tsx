@@ -27,11 +27,13 @@ export default function StudentProfile({ params }: { params: { id: string } }) {
                 </div>
               </div>
               <div className="mt-4 md:mt-0 flex space-x-4">
-                <Button className="bg-white text-blue-600 hover:bg-blue-50">
-                  Download Resume
-                </Button>
-                <Button variant="outline" className="text-white border-white hover:bg-white/10">
+                <Button className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 group">
                   Share Profile
+                  <span className="ml-2 inline-block transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+                </Button>
+                <Button variant="outline" className="bg-transparent text-white border-2 border-purple-300 hover:border-purple-200 hover:bg-purple-500/10 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm group">
+                  Download CV
+                  <span className="ml-2 inline-block transform scale-0 group-hover:scale-100 transition-transform duration-300">↓</span>
                 </Button>
               </div>
             </div>
@@ -58,7 +60,10 @@ export default function StudentProfile({ params }: { params: { id: string } }) {
               <div className="p-6 border-b border-gray-200">
                 <div className="flex items-center justify-between">
                   <h2 className="text-xl font-semibold text-gray-900">Certificates</h2>
-                  <Button variant="outline" size="sm">View All</Button>
+                  <Button variant="outline" size="sm" className="border-purple-300 hover:border-purple-400 hover:bg-purple-50 transform hover:scale-105 hover:-translate-y-1 group">
+                    View All
+                    <span className="ml-2 inline-block transform scale-0 group-hover:scale-100 transition-transform duration-300">→</span>
+                  </Button>
                 </div>
               </div>
               <div className="divide-y divide-gray-200">

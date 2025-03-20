@@ -4,27 +4,29 @@ import { Button } from "@/components/ui/Button";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50 animate-fadeIn">
+    <div className="min-h-screen bg-[#E9F1FA] animate-fadeIn">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 overflow-hidden">
+      <div className="relative bg-gradient-to-r from-blue-500 to-[#00ABE4] overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Secure Your Academic Achievements
               <br />
-              <span className="text-blue-200">on the Blockchain</span>
+              <span className="text-[#E9F1FA]">on the Certify-chain</span>
             </h1>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-[#E9F1FA] max-w-2xl mx-auto mb-8">
               Issue, verify, and manage academic certificates with blockchain technology.
               Ensure authenticity and eliminate fraud.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-blue text-blue-600 hover:bg-blue-50">
+              <Button className="bg-white text-[#00ABE4] hover:bg-[#E9F1FA] transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-white/25 font-semibold px-8 py-3 rounded-lg group">
                 Get Started
+                <span className="ml-2 inline-block transform group-hover:translate-x-2 transition-transform duration-300">→</span>
               </Button>
-              <Button variant="outline" className="text-white border-white hover:bg-white/10">
+              <Button variant="outline" className="bg-transparent text-white border-2 border-white hover:border-[#E9F1FA] hover:bg-white/10 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm font-semibold px-8 py-3 rounded-lg group">
                 Learn More
+                <span className="ml-2 inline-block transform scale-0 group-hover:scale-100 transition-transform duration-300">→</span>
               </Button>
             </div>
           </div>
@@ -47,6 +49,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
+                id: 'feature-1',
                 title: "Blockchain Security",
                 description: "Immutable and tamper-proof certificates secured by blockchain technology",
                 icon: (
@@ -56,6 +59,7 @@ export default function Home() {
                 )
               },
               {
+                id: 'feature-2',
                 title: "Instant Verification",
                 description: "Verify certificates instantly with just a few clicks",
                 icon: (
@@ -65,6 +69,7 @@ export default function Home() {
                 )
               },
               {
+                id: 'feature-3',
                 title: "Global Recognition",
                 description: "Certificates recognized and verifiable worldwide",
                 icon: (
@@ -75,7 +80,7 @@ export default function Home() {
               }
             ].map((feature) => (
               <div
-                key={feature.title}
+                key={feature.id}
                 className="bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="h-16 w-16 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mx-auto mb-6">
@@ -101,27 +106,31 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               {
+                id: 'step-1',
                 step: "1",
                 title: "Create Account",
                 description: "Sign up as a student or institution"
               },
               {
+                id: 'step-2',
                 step: "2",
                 title: "Connect Wallet",
                 description: "Link your blockchain wallet"
               },
               {
+                id: 'step-3',
                 step: "3",
                 title: "Issue/Receive",
                 description: "Issue or receive certificates"
               },
               {
+                id: 'step-4',
                 step: "4",
                 title: "Verify",
                 description: "Instantly verify certificates"
               }
             ].map((step, index) => (
-              <div key={step.title} className="relative">
+              <div key={step.id} className="relative">
                 <div className="bg-white rounded-xl p-8 text-center relative z-10">
                   <div className="h-12 w-12 rounded-full bg-blue-600 text-white text-xl font-bold flex items-center justify-center mx-auto mb-6">
                     {step.step}
@@ -150,23 +159,26 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
+                id: 'testimonial-1',
                 quote: "The blockchain verification system has revolutionized how we issue certificates. It's secure and efficient.",
                 author: "Dr. Sarah Johnson",
                 role: "Dean, MIT"
               },
               {
+                id: 'testimonial-2',
                 quote: "As a student, having my certificates on the blockchain gives me confidence in their authenticity and global recognition.",
                 author: "Michael Chen",
                 role: "Computer Science Student"
               },
               {
+                id: 'testimonial-3',
                 quote: "The verification process is incredibly fast and reliable. It has streamlined our recruitment process significantly.",
                 author: "Emily Brown",
                 role: "HR Director, Tech Corp"
               }
             ].map((testimonial) => (
               <div
-                key={testimonial.author}
+                key={testimonial.id}
                 className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300"
               >
                 <svg className="h-8 w-8 text-blue-600 mb-6" fill="currentColor" viewBox="0 0 24 24">
@@ -184,17 +196,18 @@ export default function Home() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-16">
+      <div className="bg-[#00ABE4] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
               Ready to Get Started?
             </h2>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-[#E9F1FA] max-w-2xl mx-auto mb-8">
               Join thousands of institutions and students already using our platform
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-50">
+            <Button className="bg-[#00ABE4] text-white hover:bg-[#0098cb] transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-[#00ABE4]/25 font-semibold px-8 py-3 rounded-lg group">
               Create Free Account
+              <span className="ml-2 inline-block transform group-hover:translate-x-2 transition-transform duration-300">→</span>
             </Button>
           </div>
         </div>
