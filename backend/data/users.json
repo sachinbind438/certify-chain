@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1742501102015",
+    "name": "Test Student",
+    "email": "student@test.com",
+    "password": "$2a$10$e3Jr6hTLF24Tqh7qSA6OkutyDGW8RXPDJe6Wt3ddVZlp4cs.yhpd2",
+    "userType": "student",
+    "createdAt": "2025-03-20T20:05:02.015Z",
+    "lastLogin": "2025-03-20T20:05:02.015Z"
+  },
+  {
+    "id": "1742501270439",
+    "name": "Test Institution",
+    "email": "institution@test.com",
+    "password": "$2a$10$e3Jr6hTLF24Tqh7qSA6OkutyDGW8RXPDJe6Wt3ddVZlp4cs.yhpd2",
+    "userType": "institution",
+    "createdAt": "2025-03-20T20:07:50.439Z",
+    "lastLogin": "2025-03-20T20:07:50.439Z"
+  },
+  {
+    "id": "1742501270440",
+    "name": "Test Employer",
+    "email": "employer@test.com",
+    "password": "$2a$10$e3Jr6hTLF24Tqh7qSA6OkutyDGW8RXPDJe6Wt3ddVZlp4cs.yhpd2",
+    "userType": "employer",
+    "createdAt": "2025-03-20T20:07:50.440Z",
+    "lastLogin": "2025-03-20T20:07:50.440Z"
+  },
+  {
+    "id": "1742501758781",
+    "name": "Sachin Bind",
+    "email": "bindsachin438@gmail.com",
+    "password": "$2a$10$0QckamZ5P5DrflVH7iL5ketMjiM3WtzbwhtJmqeLhYcnAQQAb4ZFa",
+    "userType": "student",
+    "createdAt": "2025-03-20T20:15:58.781Z",
+    "lastLogin": "2025-03-20T20:15:58.781Z"
+  },
+  {
+    "id": "1742502046461",
+    "name": "sachin438",
+    "email": "bindsachin@gmail.com",
+    "password": "$2a$10$5bBwiK2SXuhCWhdQL7j8TO75ySWzLjo9ZNeRVr7D5VpLkCNbK6vpW",
+    "userType": "student",
+    "createdAt": "2025-03-20T20:20:46.461Z",
+    "lastLogin": "2025-03-20T20:20:46.461Z"
+  },
+  {
+    "id": "1742503118852",
+    "name": "prem",
+    "email": "premchavan@gmail.com",
+    "password": "$2a$10$pqft7BYCBS5z8yVNm6HLqeOrtgoupPOcKqkdUK8SZGUVl1fa8RzZW",
+    "userType": "student",
+    "createdAt": "2025-03-20T20:38:38.852Z",
+    "lastLogin": "2025-03-20T20:38:38.852Z"
+  },
+  {
+    "id": "1742503505523",
+    "name": "test",
+    "email": "test1@example.com",
+    "password": "$2a$10$N0k.RE7HvQkwpw.hcYssw.1pErB0B2HtfIohpNSCYPZp4t8YWg/C.",
+    "userType": "student",
+    "createdAt": "2025-03-20T20:45:05.523Z",
+    "lastLogin": "2025-03-20T20:45:05.523Z"
+  },
+  {
+    "id": "1742504565905",
+    "name": "test2",
+    "email": "student22@test.com",
+    "password": "$2a$10$GBa1D29LRpOLzlt9CNUTFeTRGLD.xnVvjxUt8HC2wk1Du.LCTkJ.W",
+    "userType": "student",
+    "createdAt": "2025-03-20T21:02:45.906Z",
+    "lastLogin": "2025-03-20T21:02:45.906Z"
+  },
+  {
+    "id": "1742505022869",
+    "name": "mani",
+    "email": "mani@gmail.com",
+    "password": "$2a$10$/2sZpwr4/DLlj2gl.tWKquTq.KsnmLK1u.H/fRigmgleOgO/icSq2",
+    "userType": "student",
+    "createdAt": "2025-03-20T21:10:22.869Z",
+    "lastLogin": "2025-03-20T21:10:22.869Z"
+  },
+  {
+    "id": "1742506353079",
+    "name": "test1",
+    "email": "test1@gmail.com",
+    "password": "$2a$10$gSA3SenzUdvr2PVZmedQA.gAL7ju3tc4yXcy.ftsbkqnqQQiESJBy",
+    "userType": "student",
+    "createdAt": "2025-03-20T21:32:33.079Z",
+    "lastLogin": "2025-03-20T21:32:33.079Z"
+  },
+  {
+    "id": "1742508148631",
+    "name": "mani1",
+    "email": "mani1@gmail.com",
+    "password": "$2a$10$j23acbuwHp/nQ8pXR73m/OVwuIyfQSkJhtfQ0lmCqtePmyq/pLj9a",
+    "userType": "student",
+    "createdAt": "2025-03-20T22:02:28.631Z",
+    "lastLogin": "2025-03-20T22:02:28.631Z"
+  },
+  {
+    "id": "1742508499543",
+    "name": "csmit",
+    "email": "csmit@gmail.com",
+    "password": "$2a$10$zbI2xFl0RIGbTSfGXMbCgOWKLdF6dwLTUZ5r74pNCBseBh9gzFdSe",
+    "userType": "institution",
+    "createdAt": "2025-03-20T22:08:19.543Z",
+    "lastLogin": "2025-03-20T22:08:19.543Z"
+  },
+  {
+    "id": "1742508597781",
+    "name": "sachin",
+    "email": "sachin@gmail.com",
+    "password": "$2a$10$FHFCtg55oyiyfVpZt0EnreoE6.cpFUJtKpDBe3Vp2P0w10BFYbRkC",
+    "userType": "employer",
+    "createdAt": "2025-03-20T22:09:57.781Z",
+    "lastLogin": "2025-03-20T22:09:57.781Z"
+  },
+  {
+    "id": "1742509900655",
+    "name": "prabhat",
+    "email": "prabhat@gmail.com",
+    "password": "$2a$10$yPf5LdLIs8ml1dMxs4soce99Vy0HH5d14R8X.56zun0OtL/BRSexO",
+    "userType": "student",
+    "createdAt": "2025-03-20T22:31:40.655Z",
+    "lastLogin": "2025-03-20T22:31:40.655Z"
+  }
+]
